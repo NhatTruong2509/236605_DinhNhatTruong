@@ -3,8 +3,7 @@ import { useEffect, useState } from 'react';
 import { Search, Plus, Pencil, Trash2, UtensilsCrossed, RefreshCw } from 'lucide-react';
 import './App.css';
 
-const API_URL = 'https://grim-vampire-p79v69gw7p5726g66-5000.app.github.dev/api/foods';
-
+const API_URL = import.meta.env.VITE_API_URL || 'https://two36605-dinhnhattruong-api.onrender.com/api/foods';
 const emptyFood = {
   foodId: '',
   name: '',
